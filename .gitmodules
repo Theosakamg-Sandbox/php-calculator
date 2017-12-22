@@ -1,0 +1,6 @@
+[submodule "php-add-lib"]
+	path = php-add-lib
+	url = git@github.com:Theosakamg/php-add-lib.git
+[submodule "php-multi-lib"]
+	path = php-multi-lib
+	url = git@github.com:Theosakamg/php-multi-lib.git
