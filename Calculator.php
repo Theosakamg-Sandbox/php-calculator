@@ -4,7 +4,7 @@ include_once 'php-multi-lib/MultiCommand.php';
 
 class Calculator
 {
-    public function run() : void {
+    public function run() {
         $line = 0;
 
         while($line != "3") {
@@ -16,15 +16,15 @@ class Calculator
                 case "1":
                     $a = readline("> a: ");
                     $b = readline("> b: ");
-                    $com = new AddCommand();
-                    $c = $com->add($a, $b);
+                    $com = new AddCommand($a);
+                    $c = $com->do($b);
                     echo "c: $c\n";
                     break;
                 case "2":
                     $a = readline("> a: ");
                     $b = readline("> b: ");
-                    $com = new MultiCommand();
-                    $c = $com->multi($a, $b);
+                    $com = new MultiCommand($a);
+                    $c = $com->do($b);
                     echo "c: $c\n";
                     break;
                 case 3:
