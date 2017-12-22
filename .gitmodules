@@ -4,3 +4,6 @@
 [submodule "php-multi-lib"]
 	path = php-multi-lib
 	url = git@github.com:Theosakamg/php-multi-lib.git
+[submodule "php-common-lib"]
+	path = php-common-lib
+	url = git@github.com:Theosakamg/php-common-lib.git
